@@ -64,10 +64,9 @@ public class DimensTool {
 
         File output = new File("output");
         tool.mkDirs(output);
-        // for (int i = 0; i < values.length; i++) {
-        //     tool.makeDimens(output, values[i].width, standard.width);
-        // }
-        tool.makeDimens(output, 400, standard.width);
+        for (int i = 0; i < values.length; i++) {
+            tool.makeDimens(output, values[i].width, standard.width);
+        }
     }
 
     private void makeDimens(File outputDir, int target, int standard) {
